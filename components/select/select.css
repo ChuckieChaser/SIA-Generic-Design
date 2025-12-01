@@ -1,0 +1,42 @@
+.component__select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    cursor: pointer;
+
+    background-color: var(--color-background);
+    color: var(--color-text-muted);
+
+    height: 3.5rem;
+
+    padding: 0.5em 1em;
+
+    outline: none;
+
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-inner);
+
+    font-size: 1rem;
+
+    &,
+    & * {
+        transition: all 0.3s ease;
+    }
+
+    &:hover {
+        border-color: var(--color-text);
+        color: var(--color-text);
+    }
+
+    &:focus {
+        border-color: var(--color-primary);
+        color: var(--color-text);
+
+        box-shadow: var(--shadow-element);
+    }
+}
+
+.component__select::-ms-expand {
+    display: none;
+}

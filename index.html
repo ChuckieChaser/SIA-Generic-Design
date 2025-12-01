@@ -160,6 +160,18 @@
 
         <section>
             <h1>Pagination</h1>
+
+            <div class="content">
+                <div class="component__pagination">
+                    <section class="component__pagination-button"></section>
+
+                    <section class="component__pagination-page">
+                        <span>Showing page</span>
+                        <select class="component__select" name="page"></select>
+                        <span>of Y</span>
+                    </section>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -203,6 +215,15 @@
 
         <section>
             <h1>Forms</h1>
+
+            <div class="content">
+                <select class="component__select" name="discount">
+                    <option value="none">None</option>
+                    <option value="pwd">PWD</option>
+                    <option value="senior">Senior</option>
+                    <option value="custom">Custom</option>
+                </select>
+            </div>
         </section>
 
         <section>
@@ -324,5 +345,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./components/tab/tab.js"></script>
         <script src="./components/modal/modal.js"></script>
+        <script src="./components/pagination/pagination.js"></script>
     </body>
 </html>

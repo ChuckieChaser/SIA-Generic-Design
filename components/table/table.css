@@ -67,6 +67,8 @@
 .component__table th {
     background-color: var(--color-primary);
     color: var(--color-background);
+
+    font-family: var(--font-heading);
 }
 
 .component__table-action {
