@@ -49,7 +49,7 @@ const createPagination = (active, total) => {
 };
 
 function populateDropdown(totalPage) {
-    const $select = $('.component__pagination .component__select');
+    const $select = $('.component__pagination .component__select select');
     $select.empty();
 
     for (let i = 1; i <= totalPage; i++) $select.append(`<option value="${i}">${i}</option>`);
@@ -60,7 +60,7 @@ function updatePage(newPage) {
     activePage = newPage;
 
     createPagination(activePage, totalPage);
-    $('.component__pagination .component__select').val(activePage);
+    $('.component__pagination .component__select select').val(activePage);
 }
 
 function handlePaginationClick() {
@@ -81,9 +81,9 @@ populateDropdown(totalPage);
 $('.component__pagination-page span:last-child').text(`of ${totalPage}`);
 
 createPagination(activePage, totalPage);
-$('.component__pagination .component__select').val(activePage);
+$('.component__pagination .component__select select').val(activePage);
 
 $('.component__pagination-button').on('click', '.pagination-button__action', handlePaginationClick);
-$('.component__pagination .component__select').on('change', function () {
+$('.component__pagination .component__select select').on('change', function () {
     updatePage(parseInt($(this).val()));
 });

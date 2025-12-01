@@ -1,4 +1,35 @@
 .component__select {
+    position: relative;
+
+    height: 3.5rem;
+
+    &,
+    & * {
+        transition: all 0.3s ease;
+    }
+
+    &.--no-icon > select {
+        padding: 0.5em 1em !important;
+    }
+
+    &:hover > * {
+        color: var(--color-text);
+        border-color: var(--color-text);
+    }
+
+    &:has(select:focus) select {
+        color: var(--color-text);
+
+        border-color: var(--color-primary);
+        box-shadow: var(--shadow-element);
+    }
+
+    &:has(select:focus) svg {
+        color: var(--color-primary);
+    }
+}
+
+.component__select select {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -8,9 +39,10 @@
     background-color: var(--color-background);
     color: var(--color-text-muted);
 
-    height: 3.5rem;
+    height: 100%;
+    width: 100%;
 
-    padding: 0.5em 1em;
+    padding: 0.5em 1em 0.5em 3.5em;
 
     outline: none;
 
@@ -18,25 +50,20 @@
     border-radius: var(--radius-inner);
 
     font-size: 1rem;
-
-    &,
-    & * {
-        transition: all 0.3s ease;
-    }
-
-    &:hover {
-        border-color: var(--color-text);
-        color: var(--color-text);
-    }
-
-    &:focus {
-        border-color: var(--color-primary);
-        color: var(--color-text);
-
-        box-shadow: var(--shadow-element);
-    }
 }
 
 .component__select::-ms-expand {
     display: none;
+}
+
+.component__select svg {
+    pointer-events: none;
+
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+
+    transform: translateY(-50%);
+
+    color: var(--color-text-muted);
 }

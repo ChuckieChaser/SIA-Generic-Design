@@ -4,7 +4,14 @@ THEN STYLE NYO NG SARILI NYO IF NALILIITAN OR NALALAKIHAN KAYO
 
 [ SYNTAX ================================================== ]
 
-kopyahin nyo nalng then palitan nyo accordingly sa needs nyo
+<div class="component__select --{type}" />
+
+ung div ung papangalanan nyo hindi ung input
+
+type = no-icon
+
+pwede mo nang i remove ung svg kapag nag --no-icon ka para
+hindi ma clutter ung html
 
 [ NOTE ================================================== ]
 
@@ -13,7 +20,21 @@ html so... tiis tiis
 -->
 
 <!-- *** SELECT *** -->
-<select class="component__select" name="PANGALAN-NG-INPUT">
-    <option value="OPTION">OPTION NYO</option>
-    <!-- Dagdagan nyo nalng ng option -->
-</select>
+<div class="component__select">
+    <svg>
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+
+    <select name="NAME-NG-INPUT-NYO">
+        <option value="none">Dropdown</option>
+        <!-- OPTION NYO -->
+    </select>
+</div>
+
+<!-- *** SELECT NO ICON *** -->
+<div class="component__select --no-icon">
+    <select name="NAME-NG-INPUT-NYO">
+        <option value="none">Dropdown No Icon</option>
+        <!-- OPTION NYO -->
+    </select>
+</div>

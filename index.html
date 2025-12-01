@@ -52,6 +52,17 @@
                 padding: 2em;
 
                 border-top: 2px solid var(--color-border);
+
+                &.--column {
+                    flex-direction: column;
+                }
+            }
+
+            .content__section {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
             }
         </style>
     </head>
@@ -66,14 +77,6 @@
 
         <section>
             <h1>Charts</h1>
-        </section>
-
-        <section>
-            <h1>Filters</h1>
-        </section>
-
-        <section>
-            <h1>Search</h1>
         </section>
 
         <section>
@@ -167,7 +170,11 @@
 
                     <section class="component__pagination-page">
                         <span>Showing page</span>
-                        <select class="component__select" name="page"></select>
+
+                        <div class="component__select --no-icon">
+                            <select name="page"></select>
+                        </div>
+
                         <span>of Y</span>
                     </section>
                 </div>
@@ -216,18 +223,64 @@
         <section>
             <h1>Forms</h1>
 
-            <div class="content">
-                <select class="component__select" name="discount">
-                    <option value="none">None</option>
-                    <option value="pwd">PWD</option>
-                    <option value="senior">Senior</option>
-                    <option value="custom">Custom</option>
-                </select>
-            </div>
-        </section>
+            <div class="content --column">
+                <section class="content__section">
+                    <div class="component__textfield">
+                        <svg>
+                            <use href="./icons.svg#search"></use>
+                        </svg>
+                        <input id="searchTextfield" type="text" name="search" placeholder="Search..." required />
+                    </div>
 
-        <section>
-            <h1>File Upload</h1>
+                    <div class="component__textfield --no-icon">
+                        <input id="emailTextfield" type="email" name="email" autocomplete="email" placeholder="Email" required />
+                    </div>
+
+                    <div class="component__textfield">
+                        <svg>
+                            <use href="./icons.svg#placeholder"></use>
+                        </svg>
+
+                        <input id="passwordTextfield" type="password" name="password" placeholder="Password" required />
+
+                        <svg class="visibility-toggle">
+                            <use href="./icons.svg#placeholder"></use>
+                        </svg>
+                    </div>
+
+                    <div class="component__textfield --no-icon">
+                        <input id="noIconPasswordTextfield" type="password" name="no-icon-password" placeholder="No Icon Password" required />
+
+                        <svg class="visibility-toggle">
+                            <use href="./icons.svg#placeholder"></use>
+                        </svg>
+                    </div>
+                </section>
+
+                <section class="content__section">
+                    <div class="component__select">
+                        <svg>
+                            <use href="./icons.svg#placeholder"></use>
+                        </svg>
+
+                        <select name="discount">
+                            <option value="none">Dropdown</option>
+                            <option value="pwd">PWD</option>
+                            <option value="senior">Senior</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+
+                    <div class="component__select --no-icon">
+                        <select name="discount">
+                            <option value="none">Dropdown No Icon</option>
+                            <option value="pwd">PWD</option>
+                            <option value="senior">Senior</option>
+                            <option value="custom">Custom</option>
+                        </select>
+                    </div>
+                </section>
+            </div>
         </section>
 
         <section>
@@ -335,10 +388,6 @@
         </section>
 
         <section>
-            <h1>Export Components</h1>
-        </section>
-
-        <section>
             <h1>Profile & Info Sections</h1>
         </section>
 
@@ -346,5 +395,6 @@
         <script src="./components/tab/tab.js"></script>
         <script src="./components/modal/modal.js"></script>
         <script src="./components/pagination/pagination.js"></script>
+        <script src="./components/textfield/textfield.js"></script>
     </body>
 </html>

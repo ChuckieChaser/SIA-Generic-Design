@@ -1,0 +1,73 @@
+<!--
+COPY PASTE NYO LNG UNG IBA'T IBANG FORMAT NA KAILANGAN NYO SA SYSTEM
+THEN STYLE NYO NG SARILI NYO IF NALILIITAN OR NALALAKIHAN KAYO
+
+[ SYNTAX ================================================== ]
+
+<div class='component__textfield --{type}' />
+
+ung div ung papangalanan nyo hindi ung input
+
+type = no-icon
+
+copy paste nyo nalng. just make sure na palitan nyo ung mga
+values
+
+speaking off, palaging may svg sa dulo ng textfield na password
+wag nyo nalng tanggalin.
+
+ung type na nasa input? 3 lng ung nilagay ko
+
+text, email and password kaya un lng gagamitin nyo
+need nyo ng search? TEXT
+number? TEXT then parseInt nyo
+
+kapag password namn, make sure na ung [id] na attr ng input
+is may password
+
+eg
+
+<input id='password' />
+
+confirmPassword
+newPassword
+password
+
+basta either password / Password. Need un for validation na dapat
+component
+-->
+
+<!-- *** TEXT WITH ICON *** -->
+<div class="component__textfield">
+    <svg>
+        <use href="./icons.svg#search"></use>
+    </svg>
+    <input id="searchTextfield" type="text" name="search" placeholder="Search..." required />
+</div>
+
+<!-- *** TEXT NO ICON *** -->
+<div class="component__textfield --no-icon">
+    <input id="emailTextfield" type="email" name="email" autocomplete="email" placeholder="Email" required />
+</div>
+
+<!-- *** PASSWORD WITH ICON *** -->
+<div class="component__textfield">
+    <svg>
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+
+    <input id="passwordTextfield" type="password" name="password" placeholder="Password" required />
+
+    <svg class="visibility-toggle">
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+</div>
+
+<!-- *** PASSWORD NO ICON *** -->
+<div class="component__textfield --no-icon">
+    <input id="noIconPasswordTextfield" type="password" name="no-icon-password" placeholder="No Icon Password" required />
+
+    <svg class="visibility-toggle">
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+</div>
