@@ -1,0 +1,59 @@
+<!--
+COPY PASTE NYO LNG UNG IBA'T IBANG FORMAT NA KAILANGAN NYO SA SYSTEM
+THEN STYLE NYO NG SARILI NYO IF NALILIITAN OR NALALAKIHAN KAYO
+
+[ SYNTAX ================================================== ]
+
+<button class="component__button {--type}" />
+types = --primary, --secondary, --critical
+
+[ ICON ================================================== ]
+
+ung path ng href ng <use> is dapat ung icons.svg nyo, then sa loob non palitan nyo ung symbol id
+eg. if symbol id ng user-icon is { user } then magiging
+
+<use href = { path ng file }#user />
+
+[ TEXT ================================================== ]
+
+di ko namn na siguro need explain
+-->
+
+<!-- *** PRIMARY BUTTON WITH ICON *** -->
+<button class="component__button --primary">
+    <svg>
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+    <span>Text</span>
+</button>
+
+<!-- *** PRIMARY BUTTON WITHOUT ICON *** -->
+<button class="component__button --primary">
+    <span>Text</span>
+</button>
+
+<!-- *** SECONDARY BUTTON WITH ICON *** -->
+<button class="component__button --secondary">
+    <svg>
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+    <span>Text</span>
+</button>
+
+<!-- *** SECONDARY BUTTON WITHOUT ICON *** -->
+<button class="component__button --secondary">
+    <span>Text</span>
+</button>
+
+<!-- *** CRITICAL BUTTON WITH ICON *** -->
+<button class="component__button --critical">
+    <svg>
+        <use href="./icons.svg#placeholder"></use>
+    </svg>
+    <span>Text</span>
+</button>
+
+<!-- *** CRITICAL BUTTON WITHOUT ICON *** -->
+<button class="component__button --critical">
+    <span>Text</span>
+</button>
