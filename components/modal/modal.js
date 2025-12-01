@@ -81,6 +81,9 @@ warningButton.on('click', () =>
             alert('dito nyo ilagay ung callbacks nyo');
         },
         cancelText: 'Sigi po',
+        onCancel: () => {
+            alert('ito kinancel mo na ganon');
+        },
     })
 );
 
