@@ -209,21 +209,27 @@
                     <span>Error Modal</span>
                 </button>
 
-                <div class="component__modal --success">
+                <div id="modal" class="component__modal">
                     <section class="component__modal-content">
                         <header>
                             <div class="modal-content__icon">
-                                <svg>
+                                <svg id="modalIcon">
                                     <use href="./icons.svg#placeholder"></use>
                                 </svg>
                             </div>
-
-                            <h1>Congratufuckinglations!</h1>
+                            <h1 id="modalHeading" class="modal-content__heading">Congrats Kumag -Jhanna</h1>
                         </header>
 
-                        <p>Yay! The code works without me understanding a single thing. Great!</p>
+                        <p id="modalDescription">Yay! The code works without me understanding a single thing. Great! Sana pati ung connection namin gumana rin</p>
 
-                        <footer></footer>
+                        <footer>
+                            <button id="modalCancelButton" class="component__button --critical">
+                                <span id="modalCancelText">Cancel</span>
+                            </button>
+                            <button id="modalConfirmButton" class="component__button --primary">
+                                <span id="modalConfirmText">Confirm</span>
+                            </button>
+                        </footer>
                     </section>
                 </div>
             </div>
