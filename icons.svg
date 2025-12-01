@@ -1,3 +1,43 @@
+<!--
+[ PANO GAMITIN ]
+
+Una mag search kayo sa google ng svg icons blahblahblah, from there either i download nyo or i copy ung code and lagay dito
+
+Preferabbly if sa google icons kayo kumuha
+
+https://fonts.google.com/icons
+
+from here, just to make sure na lahat tyo ay magkakaparehas ng icons (kayo kung gusto nyo pa bahala kayo) sundan nyo to:
+
+From filter:
+    - Tick nyo ung Fill
+    - Then tingin sa baba, makikita nyo nakalagay Outline sa baba lng nung Material Symbols (new). Palitan nyo ung outline ng Rounded
+
+then search na kyo ng keme keme icon nyo, kapag nakapili na kayo, may copy paste don sa mismong icon, click nyo un and paste nyo dito
+
+eg.
+
+ito ung usual na lumalabas kapag kina copy nyo ung icon
+* <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg>
+
+from here, slice nyo lng ung <svg> tags including the attributes, ang dapat na maiwan lng is ung <path />
+* <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+
+then create kayo ng symbol, copy paste nyo lng ung values, ang papalitan nyo lng namn don is ung "id"
+* <symbol id="ITO-PALITAN-NYO-NG-KAHIT-ANONG-GUSTO-NYONG-ITAWAG" viewBox="0 -960 960 960" fill="currentColor">
+*    ...
+* </symbol>
+
+then sa loob noon nyo ialagay ung path
+* <symbol id="ITO-PALITAN-NYO-NG-KAHIT-ANONG-GUSTO-NYONG-ITAWAG" viewBox="0 -960 960 960" fill="currentColor">
+*    <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+* </symbol>
+
+tapos na!
+
+tawagin nyo gamit ung svg tag
+
+ -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <!-- *** PLACEHOLDER *** -->
     <symbol id="placeholder" viewBox="0 -960 960 960" fill="currentColor">
