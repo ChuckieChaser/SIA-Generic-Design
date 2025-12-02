@@ -1,0 +1,73 @@
+.component__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-surface);
+
+    min-width: 25rem;
+
+    border-top: 6px solid var(--color-primary);
+    border-radius: var(--radius-outer);
+
+    box-shadow: var(--shadow-element);
+
+    &,
+    & * {
+        transition: all 0.3s ease;
+    }
+
+    & > section {
+        color: var(--color-primary);
+    }
+
+    &.--success {
+        border-color: var(--color-success);
+    }
+
+    &.--success section {
+        color: var(--color-success);
+    }
+
+    &.--warning {
+        border-color: var(--color-warning);
+    }
+
+    &.--warning section {
+        color: var(--color-warning);
+    }
+
+    &.--error {
+        border-color: var(--color-error);
+    }
+
+    &.--error section {
+        color: var(--color-error);
+    }
+}
+
+.component__card-header {
+    display: flex;
+    gap: 0.5rem;
+
+    width: 100%;
+
+    padding: 1em;
+    border-bottom: 2px solid var(--color-border);
+}
+
+.component__card-header svg {
+    height: 3rem;
+    width: 3rem;
+}
+
+.component__card-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.component__card > h1 {
+    padding: 1em;
+}
