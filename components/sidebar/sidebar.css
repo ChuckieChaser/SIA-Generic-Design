@@ -36,8 +36,8 @@
 }
 
 .sidebar__profile img {
-    height: 6rem;
-    width: 6rem;
+    height: 8rem;
+    width: 8rem;
 
     border-radius: var(--radius-circle);
 }
