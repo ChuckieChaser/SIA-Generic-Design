@@ -1,0 +1,27 @@
+.component__textarea {
+    background-color: var(--color-background);
+    color: var(--color-text-muted);
+
+    height: 15rem;
+    width: 25rem;
+
+    padding: 1em;
+
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-inner);
+
+    outline: none;
+
+    font-size: 1rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: var(--color-text);
+        border-color: var(--color-text);
+    }
+
+    &:focus {
+        color: var(--color-text);
+        border-color: var(--color-primary);
+    }
+}

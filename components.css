@@ -13,5 +13,6 @@
 @import url('./components/sidebar/sidebar.css');
 @import url('./components/tab/tab.css');
 @import url('./components/table/table.css');
+@import url('./components/textarea/textarea.css');
 @import url('./components/textfield/textfield.css');
 @import url('./components/tooltip/tooltip.css');
