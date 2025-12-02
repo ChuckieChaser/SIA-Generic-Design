@@ -78,6 +78,35 @@
     gap: 1rem;
 }
 
+.component__table-action div {
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+
+    padding: 0.5em;
+    border-radius: var(--radius-circle);
+
+    &:hover {
+        background-color: var(--color-background);
+    }
+}
+
+.component__table-action div:first-child {
+    color: var(--color-success);
+}
+
+.component__table-action div:nth-child(2) {
+    color: var(--color-warning);
+}
+
+.component__table-action div:last-child {
+    color: var(--color-error);
+}
+
 .component__table td:last-child button {
     flex: 1;
 

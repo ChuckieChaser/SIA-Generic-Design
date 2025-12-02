@@ -102,15 +102,21 @@
                                 <td>Luslos</td>
                                 <td>
                                     <section class="component__table-action">
-                                        <button class="component__button --primary">
-                                            <span>Add</span>
-                                        </button>
-                                        <button class="component__button --secondary">
-                                            <span>Update</span>
-                                        </button>
-                                        <button class="component__button --critical">
-                                            <span>Delete</span>
-                                        </button>
+                                        <div data-tooltip="ADD">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
+                                        <div data-tooltip="UPDATE">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
+                                        <div data-tooltip="DELETE">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
                                     </section>
                                 </td>
                             </tr>
@@ -121,15 +127,21 @@
                                 <td>Payat</td>
                                 <td>
                                     <section class="component__table-action">
-                                        <button class="component__button --primary">
-                                            <span>Add</span>
-                                        </button>
-                                        <button class="component__button --secondary">
-                                            <span>Update</span>
-                                        </button>
-                                        <button class="component__button --critical">
-                                            <span>Delete</span>
-                                        </button>
+                                        <div data-tooltip="ADD">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
+                                        <div data-tooltip="UPDATE">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
+                                        <div data-tooltip="DELETE">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
                                     </section>
                                 </td>
                             </tr>
@@ -140,15 +152,21 @@
                                 <td>Kalbo</td>
                                 <td>
                                     <section class="component__table-action">
-                                        <button class="component__button --primary">
-                                            <span>Add</span>
-                                        </button>
-                                        <button class="component__button --secondary">
-                                            <span>Update</span>
-                                        </button>
-                                        <button class="component__button --critical">
-                                            <span>Delete</span>
-                                        </button>
+                                        <div data-tooltip="ADD">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
+                                        <div data-tooltip="UPDATE">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
+                                        <div data-tooltip="DELETE">
+                                            <svg>
+                                                <use href="./icons.svg#placeholder"></use>
+                                            </svg>
+                                        </div>
                                     </section>
                                 </td>
                             </tr>
@@ -391,10 +409,19 @@
             <h1>Profile & Info Sections</h1>
         </section>
 
+        <section>
+            <h1>Tooltip</h1>
+
+            <div class="content">
+                <div id="tooltip" class="component__tooltip">Hello World</div>
+            </div>
+        </section>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./components/tab/tab.js"></script>
         <script src="./components/modal/modal.js"></script>
         <script src="./components/pagination/pagination.js"></script>
         <script src="./components/textfield/textfield.js"></script>
+        <script src="./components/tooltip/tooltip.js"></script>
     </body>
 </html>
