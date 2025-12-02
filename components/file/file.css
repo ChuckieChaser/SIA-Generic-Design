@@ -1,0 +1,48 @@
+.component__file {
+    cursor: pointer;
+
+    background-color: var(--color-background);
+    color: var(--color-text-muted);
+
+    padding: 0.5em;
+
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-inner);
+
+    font-size: 1rem;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: var(--color-text);
+        border-color: var(--color-text);
+    }
+
+    &:focus {
+        border-color: var(--color-primary);
+        color: var(--color-text);
+    }
+}
+
+.component__file::-webkit-file-upload-button {
+    cursor: pointer;
+
+    background-color: var(--color-primary);
+    color: var(--color-background);
+
+    height: 2.25rem;
+
+    margin-right: 0.5rem;
+
+    padding: 0.5em 1em;
+
+    border: 2px solid var(--color-primary);
+    border-radius: var(--radius-inner);
+
+    transition: all 0.3s ease;
+}
+
+.filey::-webkit-file-upload-button:hover {
+    background-color: var(--color-primary-light);
+    color: var(--color-primary);
+}
