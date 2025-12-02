@@ -18,7 +18,7 @@
                 align-items: center;
                 gap: 1rem;
 
-                padding: 1em;
+                padding: 2em;
             }
 
             body > section {
@@ -64,11 +64,74 @@
                 align-items: center;
                 gap: 1rem;
             }
+
+            .html__nyo {
+                overflow: hidden;
+
+                display: grid;
+                grid-template-columns: 20rem 1fr;
+                grid-template-rows: 6rem 1fr;
+
+                height: 720px;
+                width: 1280px;
+
+                border: 2px solid var(--color-border);
+                border-radius: 1em;
+            }
         </style>
     </head>
     <body>
         <section>
             <h1>Layout Components</h1>
+
+            <div class="content">
+                <div class="html__nyo">
+                    <header class="header">
+                        <h1>PANGALAN NUNG ACTIVE NA PAGE</h1>
+
+                        <img src="./placeholder.png" alt="User Icon" />
+                    </header>
+
+                    <aside class="sidebar">
+                        <section class="sidebar__profile">
+                            <img src="./placeholder.png" alt="User Icon" />
+                            <h1>Chuckie X Chaser</h1>
+                        </section>
+
+                        <section class="sidebar__navigation">
+                            <div class="--active">
+                                <svg>
+                                    <use href="./icons.svg#placeholder"></use>
+                                </svg>
+                                Dashboard
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="./icons.svg#placeholder"></use>
+                                </svg>
+                                Dashboard
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="./icons.svg#placeholder"></use>
+                                </svg>
+                                Dashboard
+                            </div>
+
+                            <div>
+                                <svg>
+                                    <use href="./icons.svg#placeholder"></use>
+                                </svg>
+                                Dashboard
+                            </div>
+                        </section>
+                    </aside>
+
+                    <main style="grid-area: 2 / 2 / 3 / 3; display: flex; justify-content: center; align-items: center; background-color: var(--color-background)">CONTENT NYO</main>
+                </div>
+            </div>
         </section>
 
         <section>
@@ -409,13 +472,7 @@
             <h1>Profile & Info Sections</h1>
         </section>
 
-        <section>
-            <h1>Tooltip</h1>
-
-            <div class="content">
-                <div id="tooltip" class="component__tooltip">Hello World</div>
-            </div>
-        </section>
+        <div id="tooltip" class="component__tooltip">Hello World</div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="./components/tab/tab.js"></script>
