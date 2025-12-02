@@ -1,0 +1,27 @@
+.component__checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    cursor: pointer;
+
+    background-color: var(--color-background);
+
+    height: 1.5rem;
+    width: 1.5rem;
+
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-inner);
+
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: var(--color-text);
+    }
+}
+
+/* Checked state */
+.component__checkbox:checked {
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}

@@ -3,6 +3,7 @@
 /* ============================== */
 @import url('./components/button/button.css');
 @import url('./components/card/card.css');
+@import url('./components/checkbox/checkbox.css');
 @import url('./components/header/header.css');
 @import url('./components/modal/modal.css');
 @import url('./components/pagination/pagination.css');
