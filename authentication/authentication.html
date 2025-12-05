@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Pharma Plus</title>
+
+        <!-- ========== [ STYLES ] ========== -->
+        <link rel="stylesheet" href="../global.css" />
+        <link rel="stylesheet" href="../components.css" />
+
+        <link rel="stylesheet" href="./authentication.css" />
+        <link rel="stylesheet" href="./fragments/login.css" />
+        <link rel="stylesheet" href="./fragments/recovery.css" />
+        <link rel="stylesheet" href="./fragments/reset.css" />
+
+        <link rel="stylesheet" href="./notification.css" />
+
+        <!-- ========== [ SCRIPTS ] ========== -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+        <script type="module" src="authentication.js"></script>
+
+        <script src="../components/textfield/textfield.js" defer></script>
+    </head>
+
+    <body>
+        <!-- ========== [ MAIN ] ========== -->
+        <main class="authentication">
+            <section class="authentication__header">
+                <img src="./assets/images/logo.png" alt="Company Logo" />
+                <h3 id="headerText">WELCOME BACK</h3>
+
+                <aside id="navigationPanel" class="authentication__header-navigation">
+                    <svg id="returnLink" height="28" width="28" data-tooltip="Return Back">
+                        <use href="./assets/icons/authentication.svg#icon-return"></use>
+                    </svg>
+                    <svg id="loginLink" height="28" width="28" data-tooltip="Return to Login">
+                        <use href="./assets/icons/authentication.svg#icon-login"></use>
+                    </svg>
+                </aside>
+            </section>
+
+            <section id="router" class="authentication__input">
+                <!-- Forms are loaded here dynamically through AJAX request -->
+            </section>
+        </main>
+
+        <!-- ========== [ NOTIFICATION ] ========== -->
+        <div id="notification" class="theme__notification-container"></div>
+    </body>
+</html>
